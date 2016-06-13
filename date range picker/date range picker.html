@@ -1,0 +1,18 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/mmnt.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="script/mmnt.js"></script>
+</head>
+<body>
+<input type="text" id="periodpickerstart1" autocomplete="off" >
+<input type="text" id="periodpickerend1" autocomplete="off" >
+
+<script>
+jQuery('#periodpickerstart1').periodpicker({
+	end: '#periodpickerend1',cells: [1,2],formatDate: 'DD-MM-YYYY'
+});
+
+</script>
+</body>
+</html>
